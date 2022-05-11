@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="creator">KOLINKO</string>
+    <string name="newnote">New note</string>
+    <string name="watchoredit">Watch or edit</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+</resources>
