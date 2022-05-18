@@ -1,5 +1,6 @@
 # Notes_java
-This is application for creating, editing and deleting notes.
+This app allows the user to write notes and edit or delete them.
+There are main page with ability to create notes, edit or delete them; note creation page; note editing page.
 
 When exiting the app, the notes, of course, are saved.
 
