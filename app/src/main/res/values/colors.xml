@@ -8,8 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="maroon">#4B0000</color>
-    <color name="red">#FF0000</color>
     <color name="lightred">#80FF0000</color>
-    <color name="darkgrey">#808080</color>
-    <color name="lightgrey">#AAAAAA</color>
 </resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1newnote"
+        android:icon="@drawable/newnote"
+        android:title="@string/newnote"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+    <item
+        android:id="@+id/item2watchoredit"
+        android:icon="@drawable/watchoredit"
+        android:title="@string/watchoredit"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/item3deletenote"
+        android:icon="@drawable/deletenote"
+        android:title="@string/delete"
+        app:showAsAction="always" />
+
+</menu>

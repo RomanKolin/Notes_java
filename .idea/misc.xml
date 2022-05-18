@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.34974358974358977" />
         <entry key="app/src/main/res/drawable/cursor.xml" value="0.18" />
         <entry key="app/src/main/res/drawable/deletecancel.xml" value="0.189" />
+        <entry key="app/src/main/res/drawable/deletecancelbuttons.xml" value="0.16" />
         <entry key="app/src/main/res/drawable/edit.xml" value="0.189" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.16" />
         <entry key="app/src/main/res/drawable/newnotesave.xml" value="0.189" />
+        <entry key="app/src/main/res/drawable/newnotesaveeditbuttons.xml" value="0.16" />
+        <entry key="app/src/main/res/drawable/watchedit.xml" value="0.1545" />
+        <entry key="app/src/main/res/drawable/watchoreditbutton.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1590678824721378" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.23143115942028986" />
         <entry key="app/src/main/res/layout/activity_the_note_content.xml" value="0.23143115942028986" />
@@ -14,6 +20,12 @@
         <entry key="app/src/main/res/layout/thenewnoteactivity.xml" value="0.32708333333333334" />
         <entry key="app/src/main/res/layout/thenoteactivity.xml" value="0.32708333333333334" />
         <entry key="app/src/main/res/layout/thenotecontentactivity.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/layout/thenotesactivity.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.2759259259259259" />
+        <entry key="app/src/main/res/menu/menu1.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/menu/thenewnoteactivitymenu.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/menu/thenewnotenotecontentactivitymenu.xml" value="0.32708333333333334" />
+        <entry key="app/src/main/res/menu/thenotesactivitymenu.xml" value="0.32708333333333334" />
       </map>
     </option>
   </component>

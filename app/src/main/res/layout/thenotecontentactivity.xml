@@ -34,39 +34,4 @@
         tools:ignore="Autofill,LabelFor,TextFields">
     </EditText>
 
-    <LinearLayout
-        android:id="@+id/LinearLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
-
-        <Button
-            android:id="@+id/button1edit"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0.2"
-            android:background="@drawable/newnotesave"
-            android:fontFamily="@font/timesnewromanitalic"
-            android:onClick="onclickedit"
-            android:text="@string/edit"
-            android:textSize="22sp"
-            tools:ignore="ButtonStyle" />
-
-        <Button
-            android:id="@+id/button2cancel"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0.8"
-            android:background="@drawable/deletecancel"
-            android:fontFamily="@font/timesnewroman"
-            android:onClick="onclickcancel"
-            android:text="@string/cancel"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            tools:ignore="ButtonStyle" />
-    </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

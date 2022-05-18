@@ -1,9 +1,11 @@
 package com.example.romankolinnotes;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.EditText;
 
 public class TheNewNoteActivity extends AppCompatActivity
@@ -21,29 +23,44 @@ public class TheNewNoteActivity extends AppCompatActivity
         editText1title = findViewById(R.id.editText1title);
         editText2content = findViewById(R.id.editText2content);
 
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         Intent noteact = getIntent();
         notepos = noteact.getIntExtra("newnoteactnotepos", 0);
         editText1title.setText(noteact.getStringExtra("newnoteacttitl"));
         editText2content.setText(noteact.getStringExtra("newnoteactcont"));
     }
 
-    public void onclicksave(View save)
+    @Override
+    public boolean onCreateOptionsMenu(Menu notesmenu)
     {
-        Intent noteactsav = new Intent();
-        noteactsav.putExtra("noteactnotepos", notepos);
-        noteactsav.putExtra("noteacttitl", editText1title.getText().toString());
-        noteactsav.putExtra("noteactcont", editText2content.getText().toString());
-
-        setResult(RESULT_OK, noteactsav);
-        finish();
+        getMenuInflater().inflate(R.menu.thenewnotenotecontentactivitymenu, notesmenu);
+        return true;
     }
-
-    public void onclickcancel(View cancel)
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public boolean onOptionsItemSelected(MenuItem notesmenuitem)
     {
-        Intent noteactdel = new Intent();
-        noteactdel.putExtra("noteactdelnote", notepos);
+        int itemid = notesmenuitem.getItemId();
+        switch (itemid)
+        {
+            case R.id.item1savenote:
+                Intent noteactsav = new Intent();
+                noteactsav.putExtra("noteactnotepos", notepos);
+                noteactsav.putExtra("noteacttitl", editText1title.getText().toString());
+                noteactsav.putExtra("noteactcont", editText2content.getText().toString());
 
-        setResult(RESULT_CANCELED, noteactdel);
-        finish();
+                setResult(RESULT_OK, noteactsav);
+                finish();
+                return true;
+            case R.id.item2cancel:
+                Intent noteactdel = new Intent();
+                noteactdel.putExtra("noteactdelnote", notepos);
+
+                setResult(RESULT_CANCELED, noteactdel);
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(notesmenuitem);
     }
 }
